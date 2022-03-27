@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Arkaplan"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/adSoyad"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="322dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/Görseller"
+        android:ems="10"
+        android:hint="@string/editText"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:singleLine="false"
+        android:text=" "
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gstbtn"
+        android:layout_width="322dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="52dp"
+        android:background="#6D4C41"
+        android:text="@string/button1"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/adSoyad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/adSoyad"
+        app:layout_constraintTop_toBottomOf="@+id/adSoyad" />
+
+    <TextView
+        android:id="@+id/gosterText"
+        android:layout_width="322dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/Görseller"
+        android:paddingTop="20dp"
+        android:text="@string/textView"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/gstbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gstbtn"
+        app:layout_constraintTop_toBottomOf="@+id/gstbtn"
+        tools:text="Textview" />
+</androidx.constraintlayout.widget.ConstraintLayout>
